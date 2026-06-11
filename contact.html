@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="fontawesome5/css/all.css" type="text/css" />
+    <!-- <img src="asset/contact.jpeg" class="ilustration-img" width="800px"> -->
+  </head>
+  <body>
+    <div class="header">
+      <img class="header-icon" src="assets/header-icon.png" alt="" />
+      <h3 class="title"><a href="index.html">Cobee The Coder</a></h3>
+      <nav>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
+    <div class="contact-container">
+      <div class="ilustration"></div>
+    </div>
+    <div class="contact">
+      <img src="asset/prof-contact.jpeg" class="prof-contact" />
+      <h1>Contact me</h1>
+      <p>Please feel free to contact me</p>
+      <h4>Your Information</h4>
+      <form autocomplete="off" method="">
+        <input type="hidden" name="_next" class="next" />
+        <div class="form-container">
+          <div class="input-container">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="form-input">
+              <input
+                type="text"
+                class="input-item"
+                name="name"
+                id="name"
+                placeholder=""
+              />
+              <label for="name" class="form-label">Name</label>
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="form-input">
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="input-item"
+                placeholder=""
+              />
+              <label for="city" class="form-label">City</label>
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="icon">
+              <i class="fas fa-envelope-open"></i>
+            </div>
+            <div class="form-input">
+              <input
+                type="text"
+                class="input-item"
+                name="email"
+                id="email"
+                placeholder=""
+              />
+              <label for="email" class="form-label">Email</label>
+            </div>
+          </div>
+          <div class="textarea-container">
+            <div class="icon2">
+              <i class="fas fa-comment"></i>
+            </div>
+            <div class="form-textarea">
+              <textarea
+                name="text"
+                id="message"
+                name="message"
+                cols="52"
+                rows="8"
+                class="textarea"
+                placeholder=""
+              ></textarea>
+              <label for="message" class="form-label2">Messege</label>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Submit" class="submit" />
+      </form>
+    </div>
+    <div class="modal-container">
+      <div class="modal">
+        <img src="asset/rocket.jpeg" alt="" />
+        <h3>Message Sent</h3>
+        <p>Thank you for submitting !</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
