@@ -1,99 +1,129 @@
-<link rel="stylesheet" href="lesson2.css">
-<head>
-    <script src="https://kit.fontawesome.com/f90068558c" crossorigin="anonymous"></script>
-</head>
-<h3> Names of Heroes in Marvel </h3>
-<ul>
-    <li> Thor </li>
-    <li> Captain America </li>
-    <li> Ant Man </li>
-</ul>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img class="header-icon" src="assets/header-icon.png" alt="" />
+        <h3 class="title"><a href="index.html">Cobee The Coder</a></h3>
+        <nav>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
 
-<ul>
-    <li type="disc"> Type Disc </li>
-    <li type="circle"> Type Circle </li>
-    <li type="square"> Type Square </li>
-</ul>
-<h3> Daftar Film Marvel Sesuai Tahun Rilis </h3>
-<ol type="A">
-    <li> Captain Marvel </li>
-    <li> Avengers: End Game </li>
-    <li> Spider-Man: Far From Home </li>
-</ol>
-
-<button>New Button</button>
-
-<section>
-    <div class="container">
-        <div class="tab">
-            <div class="tab-header">
-                <div>
-                    <h1 class="name">Bronze</h1>
-                </div>
-                <div>
-                    <h2 class="price"> Under IDR100.000</h2>
-                </div>
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1 class="jumbotron-title">Dapatkan Tips Programming Disini!</h1>
+          <div class="header-flex">
+            <div>
+              <h2
+                class="jumbotron-text"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-once="true"
+                data-aos-easing="ease-in"
+                data-aos-delay="150"
+              >
+                Baru di dunia Programming? <br />
+                Belajar lewat pengembangan
+                <span style="color: #f4a261">Game dan Web</span> sederhana!
+              </h2>
+              <div class="mini-text-flex">
+                <p class="mini-text">Belajar programming dasar disini</p>
+                <button id="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down"></i>
+                </button>
+              </div>
             </div>
-            <hr>
-            <ul class="list">
-                <li>Bouquet</li>
-                <li> <del> Decoration </del></li>
-                <li> Vase </li>
-                <li> One flower type </li>
-                <li> Lily </li>
-                <li> Rose </li>
-                <li> Tulip </li>
-                <li><del> Sunflower </del></li>
-                <li><del> Baby Breath </del></li>
-            </ul>
-            <button> Order Now</button>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="about">
-        <div>
-            <h2 class="about"> About Us</h2>
-            <p class="about">Deskripsi e-commerce mu sendiri</p>
-        </div>
-        <div class="image-about">
-            <img src="asset/html.png" alt="About Us" width="450px" height="auto" class="about-us">
-        </div>
-    </div>
-</section>
-<i class="fab fa-instagram"></i>
-<link rel="stylesheet" href="fontawesome5/css/all.css" type="text/css">
-<p> <i class="fas fa-bomb"></i> Bomb Icon</p>
-<footer>
-    <div class="center-footer">
-        <div class="main-footer">
-            <div class="left-footer">
-                <h3 class="info-left"> <b>Address</b></h3>
-                <p class="info-left"> Tukad Yeh AyaStreet No.45, Renon,Denpasar</p>
+            <div>
+              <img
+                class="jumbotron-img"
+                src="assets/img-header.png"
+                alt=""
+                width="auto"
+                height="300"
+              />
             </div>
-            <div class="right-footer">
-                <h3 class="info-right"> <b>Contacts</b></h3>
-                <p class="info-right">Phone : 087876667564</p>
-                <p class="info-right">Instagram : @floristshop</p>
+          </div>
+        </div>
+        <svg
+          class="wave1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#ffff"
+            fill-opacity="1"
+            d="M0,224L48,229.3C96,235,192,245,288,245.3C384,245,480,235,576,213.3C672,192,768,160,864,144C960,128,1056,128,1152,138.7C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+      <section id="slider" class="section-slider">
+        <div class="image-slider">
+          <div class="slide active">
+            <img src="asset/contact.jpeg" alt="" />
+            <div class="slide-text">
+              <h2>Game Development</h2>
+              <p>
+                Instead of playing game all day long, why not create your own?
+              </p>
             </div>
+          </div>
+          <div class="slide">
+            <img src="asset/download (1).jpeg" alt="" />
+            <div class="slide-text">
+              <h2>Game Development</h2>
+              <p>
+                Instead of playing game all day long, why not create your own?
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="asset/contact.jpeg" alt="" />
+            <div class="slide-text">
+              <h2>Game Development</h2>
+              <p>
+                Instead of playing game all day long, why not create your own?
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="asset/contact.jpeg" alt="" />
+            <div class="slide-text">
+              <h2>Game Development</h2>
+              <p>
+                Instead of playing game all day long, why not create your own?
+              </p>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="slider-btn active"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+          </div>
         </div>
-        <div class="main-footer">
-            <p class="info-center">CopyrightN&copy; 2021 Designed by Florist Shop</p>
-        </div>
-    </div>
-</footer>
-
-
-<h3 class="info-left"><i class="fas fa-map-marked-alt"></i>Address</h3>
-
-
-<head>
-    <link rel="preconnect" href="https://fonts.google.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
-    <style>
-        p {
-          font-family: "Dancing Script", cursive;
-        }
-    </style>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
+      </section>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
